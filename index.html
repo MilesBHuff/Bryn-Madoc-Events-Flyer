@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <!-- Basic metadata -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html"/>
+
+        <!-- Theming -->
+        <meta name="theme-color" content="#35136d" />
+        <meta name="background-color" content="#fff" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- About -->
+        <title>Bryn Madoc Event Schedule</title>
+        <meta name="description" content="A list of events in the barony of Bryn Madoc (part of the SCA — Society for Creative Anachronism)." />
+        <meta keywords="Athens, Georgia, Bryn Madoc, SCA, Society for Creative Anachronism, Meridies" />
+
+        <!-- Dependencies -->
+        <script>
+            'use strict';
+            const main = async() => {
+                try {
+                    const data = await (await fetch('./events.json')).json();
+                    console.debug(data);
+                } catch(error) {
+                    console.error(error);
+                }
+            }
+            main();
+        </script>
+        <style>
+            :root {
+                --purple: #35136d;
+                --purple-dark: #281052;
+                --gold: #c99716;
+                --cream: #fffdf7;
+                --ink: #211a1a;
+            }
+
+            .spinner {
+                aspect-ratio: 1;
+                width: 2rem;
+                border: 0.25rem solid var(--purple);
+                border-right-color: transparent;
+                border-radius: 50%;
+                animation: spinner 1s linear infinite;
+            }
+            @keyframes spinner {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+
+        </style>
+    </head>
+
+    <body>    
+        <div id="root">
+            <noscript>This webpage requires JavaScript.</noscript>
+            <div class="spinner"></div>
+        </div>
+    </body>
+</html>
