@@ -21,9 +21,12 @@
             const main = async() => {
                 try {
                     const data = await (await fetch('./events.json')).json();
-                    console.debug(data);
                     globalThis.document.getElementById('loading').style.display = 'none';
-                    globalThis.document.getElementById('overall-date').innerText = data.period;
+                    const monthDisplay =  new Intl.DateTimeFormat('en-US', {month: 'long'}).format(new Date(data.year, data.month - 1));
+                    globalThis.document.getElementById('overall-date').innerText = `${monthDisplay} ${data.year}`;
+                    for(const event of data.events) {
+                        console.debug(event);
+                    }
                 } catch(error) {
                     console.error(error);
                 }

@@ -1,6 +1,37 @@
 {
-    "period": "September 2026",
-    "events": {
-        
-    }
+    "year": 2026,
+    "month": 9,
+    "events": [{
+        "day": 1,
+        "time": "19:00",
+        "title": "Business Meeting",
+        "location": "on Zoom",
+        "details": "Everyone is welcome.",
+        "extra": "Link provided that day on Facebook and Discord.",
+        "icon": "computer-monitor.png"
+    }, {
+        "day": 8,
+        "time": "TBD",
+        "title": "Live Music Practice",
+        "location": "in-person (location pending)",
+        "details": "",
+        "extra": "",
+        "icon": "music-group.png"
+    }, {
+        "day": 19,
+        "time": "TBD",
+        "title": "Live Weapons Practice",
+        "location": "TBD",
+        "details": "every third Saturday, weather permitting",
+        "extra": "Before attending, confirm with Jessi Moss (THL Katarzyna) on Facebook or Discord.",
+        "icon": "crossed-swords.png"
+    }, {
+        "day": 29,
+        "time": "TBD",
+        "title": "Potluck and Project Night",
+        "location": "661 Ford Rd, Jefferson, GA 30549",
+        "details": "Everyone welcome!",
+        "extra": "Bring a small dish to share. Cake is provided.",
+        "icon": "crossed-swords.png"
+    }]
 }
