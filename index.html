@@ -22,6 +22,8 @@
                 try {
                     const data = await (await fetch('./events.json')).json();
                     console.debug(data);
+                    globalThis.document.getElementById('loading').style.display = 'none';
+                    globalThis.document.getElementById('overall-date').innerText = data.period;
                 } catch(error) {
                     console.error(error);
                 }
@@ -36,7 +38,12 @@
                 --cream: #fffdf7;
                 --ink: #211a1a;
             }
+            .root {
+                max-width: 1024px;
+                padding: 1rem;
+            }
 
+            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
             .spinner {
                 aspect-ratio: 1;
                 width: 2rem;
@@ -51,14 +58,75 @@
                 }
             }
 
-
+            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            .header {
+                width: 100%;
+                display: flex;
+                gap: 3rem;
+                align-items: center;
+            }
+            .header-image {
+                height: 240px;
+            }
+            .header-text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                font-family: "Almendra", "Georgia", "Times New Roman", serif;
+                font-variant-caps: small-caps;
+                color: var(--purple);
+            }
+            .header-text >* {
+                line-height: 100%;
+            }
+            .header-text-pre {
+                font-size: 40px;
+                line-height: 80%;
+            }
+            .header-text-main {
+                font-size: 120px;
+                line-height: 80%;
+            }
+            .header-text-post {
+                font-size: 40px;
+            }
+            .header-text-divider {
+                font-size: 40px;
+            }
+            .header-text-decorated {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            .header-text-decorated::before,
+            .header-text-decorated::after {
+                content: "";
+                flex: 1;
+                border-top: 0.125rem solid var(--gold);
+            }
         </style>
     </head>
 
     <body>    
-        <div id="root">
+        <div id="root" class="root">
             <noscript>This webpage requires JavaScript.</noscript>
-            <div class="spinner"></div>
+            <div id="header" class="header">
+                <img class="header-image" src="./res/coa.png"/>
+                <div class="header-text">
+                    <div class="header-text-pre header-text-decorated">The Barony of</div>
+                    <div class="header-text-main">Bryn Madoc</div>
+                    <div class="header-text-divider header-text-decorated">⚜</div>
+                    <div class="header-text-post">
+                        <span id="overall-date">????</span>
+                        Meeting Schedule
+                    </div>
+                </div>
+            </div>
+            <div id="loading" class="spinner"></div>
+            <div id="events"></div>
         </div>
     </body>
 </html>
