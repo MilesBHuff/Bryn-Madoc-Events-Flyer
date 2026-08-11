@@ -24,9 +24,24 @@
                     globalThis.document.getElementById('loading').style.display = 'none';
                     const monthDisplay =  new Intl.DateTimeFormat('en-US', {month: 'long'}).format(new Date(data.year, data.month - 1));
                     globalThis.document.getElementById('overall-date').innerText = `${monthDisplay} ${data.year}`;
+
+                    const eventsTable = globalThis.document.createElement('table');
+                    eventsTable.classList.add('events-table');
                     for(const event of data.events) {
-                        console.debug(event);
+                        const row = eventsTable.insertRow();
+                        const dateCell = row.insertCell();
+                        const mainCell = row.insertCell();
+                        const moreCell = row.insertCell();
+
+                        dateCell.classList.add('events-table-date-cell');
+                        mainCell.classList.add('events-table-main-cell');
+                        moreCell.classList.add('events-table-more-cell');
+
+                        dateCell.innerHTML = `<p>${monthDisplay}</p><p>${event.day}</p><p>${event.time}</p>`; //TODO
+                        mainCell.innerHTML = `<p>${event.title}</p><p>${event.location}</p><p>${event.details}</p>`; //TODO
+                        moreCell.innerHTML = `<p>${event.extra}</p>`; //TODO
                     }
+                    globalThis.document.getElementById('events').appendChild(eventsTable);
                 } catch(error) {
                     console.error(error);
                 }
@@ -36,10 +51,7 @@
         <style>
             :root {
                 --purple: #35136d;
-                --purple-dark: #281052;
                 --gold: #c99716;
-                --cream: #fffdf7;
-                --ink: #211a1a;
             }
             .root {
                 max-width: 1024px;
@@ -109,6 +121,19 @@
                 content: "";
                 flex: 1;
                 border-top: 0.125rem solid var(--gold);
+            }
+
+            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            .events-table {
+
+            }
+            .events-table-date-cell {
+                background-color: var(--purple);
+                color: white;
+            }
+            .events-table-main-cell {
+            }
+            .events-table-more-cell {
             }
         </style>
     </head>
