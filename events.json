@@ -4,23 +4,20 @@
     "events": [{
         "day": 1,
         "time": "7:00 PM",
-        "icon": "computer-monitor.png",
         "title": "Business Meeting",
         "location": "Online (Zoom)",
-        "details": "",
+        "details": "First day of every month.",
         "extra": "Link provided that day on Facebook and Discord."
     }, {
         "day": 8,
         "time": "TBD",
-        "icon": "music-group.png",
         "title": "Live Music Practice",
         "location": "TBD",
-        "details": "",
+        "details": "Second Tuesday of every month.",
         "extra": ""
     }, {
         "day": 19,
         "time": "TBD",
-        "icon": "crossed-swords.png",
         "title": "Live Weapons Practice",
         "location": "TBD",
         "details": "Every third Saturday, weather permitting.",
@@ -28,7 +25,6 @@
     }, {
         "day": 29,
         "time": "TBD",
-        "icon": "cooking-pot.png",
         "title": "Potluck & Project Night",
         "location": "661 Ford Rd, Jefferson, GA 30549",
         "details": "",

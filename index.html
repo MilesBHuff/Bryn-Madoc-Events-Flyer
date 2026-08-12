@@ -16,6 +16,11 @@
         <meta keywords="Athens, Georgia, Bryn Madoc, SCA, Society for Creative Anachronism, Meridies" />
 
         <!-- Dependencies -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+        <!-- Code -->
         <script>
             'use strict';
             const main = async() => {
@@ -45,7 +50,7 @@
 `;
                         mainCell.innerHTML = `
 <div class="events-table-cell-title">${event.title}</div>
-<div class="events-table-cell-location">Location: ${event.location}</div>
+<div class="events-table-cell-location"><span class="events-table-cell-location-header">Location:</span> ${event.location}</div>
 <div class="events-table-cell-details">${event.details}</div>
 `;
                         if(event.extra) moreCell.innerHTML = `
@@ -67,8 +72,11 @@
             .root {
                 max-width: 1024px;
                 padding: 1rem;
-                font-family: "Georgia", "Times New Roman", serif;
+                font-family: "Alice", serif;
                 font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -199,8 +207,13 @@
             }
             .events-table-cell-location {
             }
+            .events-table-cell-location-header {
+                font-variant-caps: small-caps;
+                color: var(--purple);
+            }
             .events-table-cell-details {
                 font-style: italic;
+                line-height: 150%;
             }
             .events-table-cell-extra {
                 font-style: italic;
@@ -219,7 +232,7 @@
                     <div class="header-text-main">Bryn Madoc</div>
                     <div class="header-text-divider header-text-decorated">⚜</div>
                     <div class="header-text-post">
-                        <span id="overall-date">????</span>
+                        <span id="overall-date"></span>
                         Meeting Schedule
                     </div>
                 </div>
@@ -227,7 +240,7 @@
             <div id="loading" class="spinner"></div>
             <div id="events"></div>
             <div id="footer" class="footer">
-                All of these events are open to everyone!
+                All of these functions are open to everyone!
             </div>
         </div>
     </body>
