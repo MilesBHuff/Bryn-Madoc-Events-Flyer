@@ -6,28 +6,28 @@
         "time": "7:00 PM",
         "title": "Business Meeting",
         "location": "Online (Zoom)",
-        "details": "First day of every month.",
-        "extra": "Link provided that day on Facebook and Discord."
+        "schedule": "First day of every month.",
+        "details": "Link provided that day on Facebook and Discord."
     }, {
         "day": 8,
         "time": "TBD",
         "title": "Live Music Practice",
         "location": "TBD",
-        "details": "Second Tuesday of every month.",
-        "extra": ""
+        "schedule": "Second Tuesday of every month.",
+        "details": ""
     }, {
         "day": 19,
         "time": "TBD",
         "title": "Live Weapons Practice",
         "location": "TBD",
-        "details": "Every third Saturday, weather permitting.",
-        "extra": "Before attending, confirm with Jessi Moss (THL Katarzyna) on Facebook or Discord."
+        "schedule": "Every third Saturday, weather permitting.",
+        "details": "Before attending, confirm with Jessi Moss (THL Katarzyna) on Facebook or Discord."
     }, {
         "day": 29,
         "time": "TBD",
         "title": "Potluck & Project Night",
         "location": "661 Ford Rd, Jefferson, GA 30549",
-        "details": "",
-        "extra": "Bring a small dish to share. Cake is provided."
+        "schedule": "",
+        "details": "Bring a small dish to share. Cake is provided."
     }]
 }

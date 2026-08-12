@@ -42,7 +42,7 @@
                         dateCell.classList.add('events-table-cell', 'events-table-cell-date');
                         mainCell.classList.add('events-table-cell', 'events-table-cell-main');
                         moreCell.classList.add('events-table-cell', 'events-table-cell-more');
-                        if(event.extra) moreCell.classList.add('events-table-cell', 'events-table-cell-more-extra');
+                        if(event.details) moreCell.classList.add('events-table-cell', 'events-table-cell-more-details');
 
                         dateCell.innerHTML = `
 <div class="events-table-cell-day">${event.day}</div>
@@ -51,10 +51,10 @@
                         mainCell.innerHTML = `
 <div class="events-table-cell-title">${event.title}</div>
 <div class="events-table-cell-location"><span class="events-table-cell-location-header">Location:</span> ${event.location}</div>
-<div class="events-table-cell-details">${event.details}</div>
+<div class="events-table-cell-schedule">${event.schedule}</div>
 `;
-                        if(event.extra) moreCell.innerHTML = `
-<div class="events-table-cell-extra">${event.extra}</div>
+                        if(event.details) moreCell.innerHTML = `
+<div class="events-table-cell-details">${event.details}</div>
 `;
                     }
                     globalThis.document.getElementById('events').appendChild(eventsTable);
@@ -183,7 +183,7 @@
                 border-bottom: 1px solid var(--purple);
                 position: relative;
             }
-            .events-table-cell-more-extra::before {
+            .events-table-cell-more-details::before {
                 content: "";
                 position: absolute;
                 border-left: 1px solid var(--gold);
@@ -211,11 +211,11 @@
                 font-variant-caps: small-caps;
                 color: var(--purple);
             }
-            .events-table-cell-details {
+            .events-table-cell-schedule {
                 font-style: italic;
                 line-height: 150%;
             }
-            .events-table-cell-extra {
+            .events-table-cell-details {
                 font-style: italic;
                 padding-left: 1rem;
             }
