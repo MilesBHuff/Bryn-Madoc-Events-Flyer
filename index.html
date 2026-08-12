@@ -33,13 +33,24 @@
                         const mainCell = row.insertCell();
                         const moreCell = row.insertCell();
 
-                        dateCell.classList.add('events-table-date-cell');
-                        mainCell.classList.add('events-table-main-cell');
-                        moreCell.classList.add('events-table-more-cell');
+                        row.classList.add('events-table-row');
+                        dateCell.classList.add('events-table-cell', 'events-table-cell-date');
+                        mainCell.classList.add('events-table-cell', 'events-table-cell-main');
+                        moreCell.classList.add('events-table-cell', 'events-table-cell-more');
+                        if(event.extra) moreCell.classList.add('events-table-cell', 'events-table-cell-more-extra');
 
-                        dateCell.innerHTML = `<p>${monthDisplay}</p><p>${event.day}</p><p>${event.time}</p>`; //TODO
-                        mainCell.innerHTML = `<p>${event.title}</p><p>${event.location}</p><p>${event.details}</p>`; //TODO
-                        moreCell.innerHTML = `<p>${event.extra}</p>`; //TODO
+                        dateCell.innerHTML = `
+<div class="events-table-cell-day">${event.day}</div>
+<div class="events-table-cell-time">${event.time}</div>
+`;
+                        mainCell.innerHTML = `
+<div class="events-table-cell-title">${event.title}</div>
+<div class="events-table-cell-location">Location: ${event.location}</div>
+<div class="events-table-cell-details">${event.details}</div>
+`;
+                        if(event.extra) moreCell.innerHTML = `
+<div class="events-table-cell-extra">${event.extra}</div>
+`;
                     }
                     globalThis.document.getElementById('events').appendChild(eventsTable);
                 } catch(error) {
@@ -56,6 +67,8 @@
             .root {
                 max-width: 1024px;
                 padding: 1rem;
+                font-family: "Georgia", "Times New Roman", serif;
+                font-size: 1rem;
             }
 
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -79,9 +92,10 @@
                 display: flex;
                 gap: 3rem;
                 align-items: center;
+                margin-bottom: 1rem;
             }
             .header-image {
-                height: 240px;
+                height: 15rem;
             }
             .header-text {
                 width: 100%;
@@ -89,7 +103,6 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
-                font-family: "Almendra", "Georgia", "Times New Roman", serif;
                 font-variant-caps: small-caps;
                 color: var(--purple);
             }
@@ -97,18 +110,18 @@
                 line-height: 100%;
             }
             .header-text-pre {
-                font-size: 40px;
+                font-size: 2.5rem;
                 line-height: 80%;
             }
             .header-text-main {
-                font-size: 120px;
+                font-size: 7.5rem;
                 line-height: 80%;
             }
             .header-text-post {
-                font-size: 40px;
+                font-size: 2.5rem;
             }
             .header-text-divider {
-                font-size: 40px;
+                font-size: 2.5rem;
             }
             .header-text-decorated {
                 width: 100%;
@@ -124,16 +137,74 @@
             }
 
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-            .events-table {
-
+            .footer {
+                color: var(--purple);
+                font-style: italic;
+                text-align: center;
+                font-size: 1.5rem;
+                margin-top: 1rem;
             }
-            .events-table-date-cell {
+
+            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            .events-table {
+                border-collapse: separate;
+                border-spacing: 0 0.5rem;
+            }
+            .events-table-row {
+            }
+            .events-table-cell {
+                padding: 0.5rem 1rem;
+            }
+            .events-table-cell-date {
                 background-color: var(--purple);
                 color: white;
+                border-radius: 1rem 0 0 1rem;
+                border: 1px solid var(--purple);
+                border-right: 0;
+                text-align: center;
             }
-            .events-table-main-cell {
+            .events-table-cell-main {
+                border: 1px solid var(--purple);
+                border-left: 0;
+                border-right: 0;
             }
-            .events-table-more-cell {
+            .events-table-cell-more {
+                border-radius: 0 1rem 1rem 0;
+                border-top: 1px solid var(--purple);
+                border-right: 1px solid var(--purple);
+                border-bottom: 1px solid var(--purple);
+                position: relative;
+            }
+            .events-table-cell-more-extra::before {
+                content: "";
+                position: absolute;
+                border-left: 1px solid var(--gold);
+                top: 10%;
+                bottom: 10%;
+            }
+
+            /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            .events-table-cell-day {
+                font-variant-caps: small-caps;
+                font-size: 2.5rem;
+            }
+            .events-table-cell-time {
+                font-variant-caps: small-caps;
+            }
+            .events-table-cell-title {
+                font-variant-caps: small-caps;
+                color: var(--purple);
+                font-size: 2rem;
+                width: max-content;
+            }
+            .events-table-cell-location {
+            }
+            .events-table-cell-details {
+                font-style: italic;
+            }
+            .events-table-cell-extra {
+                font-style: italic;
+                padding-left: 1rem;
             }
         </style>
     </head>
@@ -155,6 +226,9 @@
             </div>
             <div id="loading" class="spinner"></div>
             <div id="events"></div>
+            <div id="footer" class="footer">
+                All of these events are open to everyone!
+            </div>
         </div>
     </body>
 </html>

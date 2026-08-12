@@ -6,15 +6,15 @@
         "time": "7:00 PM",
         "icon": "computer-monitor.png",
         "title": "Business Meeting",
-        "location": "on Zoom",
-        "details": "Everyone is welcome.",
+        "location": "Online (Zoom)",
+        "details": "",
         "extra": "Link provided that day on Facebook and Discord."
     }, {
         "day": 8,
         "time": "TBD",
         "icon": "music-group.png",
         "title": "Live Music Practice",
-        "location": "in-person (location pending)",
+        "location": "TBD",
         "details": "",
         "extra": ""
     }, {
@@ -23,15 +23,15 @@
         "icon": "crossed-swords.png",
         "title": "Live Weapons Practice",
         "location": "TBD",
-        "details": "every third Saturday, weather permitting",
+        "details": "Every third Saturday, weather permitting.",
         "extra": "Before attending, confirm with Jessi Moss (THL Katarzyna) on Facebook or Discord."
     }, {
         "day": 29,
         "time": "TBD",
         "icon": "cooking-pot.png",
-        "title": "Potluck and Project Night",
+        "title": "Potluck & Project Night",
         "location": "661 Ford Rd, Jefferson, GA 30549",
-        "details": "Everyone welcome!",
+        "details": "",
         "extra": "Bring a small dish to share. Cake is provided."
     }]
 }
