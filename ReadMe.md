@@ -1,6 +1,7 @@
 # ReadMe
 
 ## Viewing
+You need to run a webserver or disable CORS to run this application locally. Here is the simplest possible way to accomplish that:
 1. Get Python from the Windows Store: https://apps.microsoft.com/detail/9PNRBTZXMB4Z
 2. Run this from a Command Prompt in the project directory: `python3 -m http.server 8000`
 3. Open `http://localhost:8000` from a web browser.
