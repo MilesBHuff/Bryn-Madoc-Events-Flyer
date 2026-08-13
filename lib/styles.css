@@ -5,7 +5,11 @@
     --gray: #777;
     --white: #fff;
 }
+body {
+    background-color: var(--gray);
+}
 .root {
+    background-color: var(--white);
     min-width: 619px;
     max-width: 1024px;
     padding: 1rem;
