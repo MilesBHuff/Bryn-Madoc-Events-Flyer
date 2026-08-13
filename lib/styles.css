@@ -101,8 +101,7 @@
     border-collapse: separate;
     border-spacing: 0 0.5rem;
 }
-.events-table-row {
-}
+/* .events-table-row {} */
 .events-table-cell {
     padding: 0.5rem 1rem;
 }
@@ -150,8 +149,7 @@
     font-size: 2rem;
     width: max-content;
 }
-.events-table-cell-location {
-}
+/* .events-table-cell-location {} */
 .events-table-cell-location-header {
     font-variant-caps: small-caps;
     color: var(--purple);

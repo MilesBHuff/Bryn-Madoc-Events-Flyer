@@ -25,10 +25,11 @@
         <link rel="stylesheet" href="./lib/styles.css">
     </head>
 
-    <body>    
+    <body>
         <div id="root" class="root">
             <noscript>This webpage requires JavaScript.</noscript>
-            <div class="nostyle" aria-hidden="true">Styles did not load; please refresh.</div>
+            <div class="nostyle" aria-hidden="true">Styles did not load; please check console or try refreshing.</div>
+
             <div id="header" class="header">
                 <div class="header-text">
                     <div class="header-text-pre header-text-decorated">The Barony of</div>
@@ -41,14 +42,17 @@
                 </div>
                 <img class="header-image" src="./res/coa.png"/>
             </div>
+
             <div id="loading-spinner" class="spinner"></div>
             <div id="loading-error" class="loading-error" style="display:none">
                 Error encountered while loading; please check console or try refreshing.
             </div>
             <div id="events"></div>
+
             <div id="footer" class="footer">
                 All of these functions are open to everyone!
             </div>
+
         </div>
     </body>
 </html>
