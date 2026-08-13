@@ -1,8 +1,12 @@
 :root {
     --purple: #35136d;
     --gold: #c99716;
+    --red: #f00;
+    --gray: #777;
+    --white: #fff;
 }
 .root {
+    min-width: 619px;
     max-width: 1024px;
     padding: 1rem;
     font-family: "Alice", serif;
@@ -32,7 +36,7 @@
 .error-message {
     font-family: "Hack", monospace;
     font-size: 1.25rem;
-    color: red;
+    color: var(--red);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -106,7 +110,7 @@
 }
 .events-table-cell-date {
     background-color: var(--purple);
-    color: white;
+    color: var(--white);
     border-radius: 1rem 0 0 1rem;
     border: 1px solid var(--purple);
     border-right: 0;
@@ -120,14 +124,14 @@
 .events-table-cell-more {
     border-radius: 0 1rem 1rem 0;
     border-top: 1px solid var(--purple);
-    border-right: 1px solid var(--purple);
+    border-right: 1rem solid var(--purple);
     border-bottom: 1px solid var(--purple);
     position: relative;
 }
 .events-table-cell-more-details::before {
     content: "";
     position: absolute;
-    border-left: 1px solid var(--gold);
+    border-left: 0.125rem solid var(--gold);
     top: 10%;
     bottom: 10%;
 }
@@ -156,16 +160,19 @@
     font-size: 2rem;
     width: max-content;
 }
-/* .events-table-cell-location {} */
+.events-table-cell-location {
+    line-height: 150%;
+}
 .events-table-cell-location-header {
     font-variant-caps: small-caps;
     color: var(--purple);
 }
 .events-table-cell-schedule {
     font-style: italic;
+    color: var(--gray);
     line-height: 150%;
 }
 .events-table-cell-details {
-    font-style: italic;
+    font-size: 1.25rem;
     padding-left: 1rem;
 }
