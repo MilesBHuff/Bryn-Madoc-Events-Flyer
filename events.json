@@ -3,28 +3,32 @@
     "month": 9,
     "events": [{
         "day": 1,
-        "time": "7:00 PM",
+        "timeStart": "7:00 PM",
+        "timeEnd": "",
         "title": "Business Meeting",
         "location": "Online (Zoom)",
         "schedule": "First day of every month.",
         "details": "Link provided that day on Facebook and Discord."
     }, {
         "day": 8,
-        "time": "TBD",
+        "timeStart": "",
+        "timeEnd": "",
         "title": "Live Music Practice",
-        "location": "TBD",
+        "location": "",
         "schedule": "Second Tuesday of every month.",
         "details": ""
     }, {
         "day": 19,
-        "time": "TBD",
+        "timeStart": "",
+        "timeEnd": "",
         "title": "Live Weapons Practice",
-        "location": "TBD",
+        "location": "",
         "schedule": "Every third Saturday, weather permitting.",
         "details": "Before attending, confirm with Jessi Moss (THL Katarzyna) on Facebook or Discord."
     }, {
         "day": 29,
-        "time": "TBD",
+        "timeStart": "",
+        "timeEnd": "",
         "title": "Potluck & Project Night",
         "location": "661 Ford Rd, Jefferson, GA 30549",
         "schedule": "",

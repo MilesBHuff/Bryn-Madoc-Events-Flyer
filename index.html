@@ -45,12 +45,12 @@
                         if(event.details) moreCell.classList.add('events-table-cell', 'events-table-cell-more-details');
 
                         dateCell.innerHTML = `
-<div class="events-table-cell-day">${event.day}</div>
-<div class="events-table-cell-time">${event.time}</div>
+<div class="events-table-cell-day">${event.day || TBD}</div>
+<div class="events-table-cell-time-start">${event.timeStart || 'TBD'}</div>
 `;
                         mainCell.innerHTML = `
-<div class="events-table-cell-title">${event.title}</div>
-<div class="events-table-cell-location"><span class="events-table-cell-location-header">Location:</span> ${event.location}</div>
+<div class="events-table-cell-title">${event.title || TBD}</div>
+<div class="events-table-cell-location"><span class="events-table-cell-location-header">Location:</span> ${event.location || 'TBD'}</div>
 <div class="events-table-cell-schedule">${event.schedule}</div>
 `;
                         if(event.details) moreCell.innerHTML = `
@@ -198,7 +198,7 @@
                 font-variant-caps: small-caps;
                 font-size: 2.5rem;
             }
-            .events-table-cell-time {
+            .events-table-cell-time-start {
                 font-variant-caps: small-caps;
                 width: 100%;
                 min-width: max-content;
