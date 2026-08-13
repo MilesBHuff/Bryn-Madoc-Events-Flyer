@@ -25,8 +25,8 @@
             'use strict';
             const main = async() => {
                 try {
+                    throw new Error('test');
                     const data = await (await fetch('./events.json')).json();
-                    globalThis.document.getElementById('loading').style.display = 'none';
                     const monthDisplay =  new Intl.DateTimeFormat('en-US', {month: 'long'}).format(new Date(data.year, data.month - 1));
                     globalThis.document.getElementById('overall-date').innerText = `${monthDisplay} ${data.year}`;
 
@@ -60,6 +60,13 @@
                     globalThis.document.getElementById('events').appendChild(eventsTable);
                 } catch(error) {
                     console.error(error);
+                    const messageElement = globalThis.document.getElementById('loading-error');
+                    if(messageElement) messageElement.style.display = 'block';
+                    else console.error(new ReferenceError("Can't find error-message element!"));
+                } finally {
+                    const spinnerElement = globalThis.document.getElementById('loading-spinner');
+                    if(spinnerElement) spinnerElement.style.display = 'none';
+                    else console.error(new ReferenceError("Can't find spinner element!"));
                 }
             }
             main();
@@ -80,6 +87,9 @@
             }
 
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+            .nostyle {
+                display: none;
+            }
             .spinner {
                 aspect-ratio: 1;
                 width: 2rem;
@@ -92,6 +102,10 @@
                 to {
                     transform: rotate(360deg);
                 }
+            }
+            .loading-error {
+                font-size: 2.5rem;
+                color: red;
             }
 
             /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -229,6 +243,7 @@
     <body>    
         <div id="root" class="root">
             <noscript>This webpage requires JavaScript.</noscript>
+            <div class="nostyle" aria-hidden="true">Styles did not load; please refresh.</div>
             <div id="header" class="header">
                 <div class="header-text">
                     <div class="header-text-pre header-text-decorated">The Barony of</div>
@@ -241,7 +256,10 @@
                 </div>
                 <img class="header-image" src="./res/coa.png"/>
             </div>
-            <div id="loading" class="spinner"></div>
+            <div id="loading-spinner" class="spinner"></div>
+            <div id="loading-error" class="loading-error" style="display:none">
+                Error encountered while loading; please check console or try refreshing.
+            </div>
             <div id="events"></div>
             <div id="footer" class="footer">
                 All of these functions are open to everyone!
