@@ -29,7 +29,7 @@
         transform: rotate(360deg);
     }
 }
-.loading-error {
+.error-message {
     font-family: "Hack", monospace;
     font-size: 1.25rem;
     color: red;

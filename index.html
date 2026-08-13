@@ -28,9 +28,6 @@
 
     <body>
         <div id="root" class="root">
-            <noscript>This webpage requires JavaScript.</noscript>
-            <div class="nostyle" aria-hidden="true">Styles did not load; please check console or try refreshing.</div>
-
             <div id="header" class="header">
                 <div class="header-text">
                     <div class="header-text-pre header-text-decorated">The Barony of</div>
@@ -44,12 +41,18 @@
                 <img class="header-image" src="./res/coa.png"/>
             </div>
 
-            <div id="loading-spinner" class="spinner"></div>
-            <div id="loading-error" class="loading-error" style="display:none">
+            <noscript class="error-message">
+                This webpage requires JavaScript; please enable and refresh.
+            </noscript>
+            <div class="nostyle" aria-hidden="true">
+                Styles did not load; please check console or try refreshing.
+            </div>
+            <div id="loading-error" class="error-message" style="display:none">
                 Error encountered while loading; please check console or try refreshing.
             </div>
-            <div id="events"></div>
+            <div id="loading-spinner" class="spinner"></div>
 
+            <div id="events"></div>
             <div id="footer" class="footer">
                 All of these functions are open to everyone!
             </div>
