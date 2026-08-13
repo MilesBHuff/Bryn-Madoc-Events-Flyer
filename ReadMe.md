@@ -7,7 +7,7 @@
 
 ## Customization
 (This assumes you already followed the steps in "Usage".)
-1. Edit `api/events.json`.
+1. Edit `api/events.json`. Please leave fields blank if you do not know what to put in them.
 2. Refresh the webpage. (F5)
 
 ## Export
