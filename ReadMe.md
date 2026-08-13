@@ -17,5 +17,5 @@ You need to run a webserver or disable CORS to run this application locally. Her
 2. Press Ctrl+Shift+C again.
 3. In the sidebar, hover your cursor over the top pane, which contains HTML code.
 4. Scroll to the top in that pane.
-5. Right-click `<div id="root" class="root">`.
+5. Right-click `<div id="root">`.
 6. Click "Screenshot Node".

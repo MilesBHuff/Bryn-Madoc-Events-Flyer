@@ -28,27 +28,27 @@
     </head>
     <!-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -->
     <body>
-        <div id="root" class="root">
+        <div id="root">
 
             <!-- Decorative header -->
-            <div id="header" class="header">
+            <header id="header">
                 <div class="header-text">
                     <div class="header-text-pre header-text-decorated">The Barony of</div>
                     <div class="header-text-main">Bryn Madoc</div>
                     <div class="header-text-divider header-text-decorated">⚜</div>
-                    <div class="header-text-post">
+                    <h1 class="header-text-post">
                         <span id="overall-date"></span>
                         Meeting Schedule
-                    </div>
+                    </h1>
                 </div>
                 <img class="header-image" src="./res/coa.png"/>
-            </div>
+            </header>
 
             <!-- Error-handling -->
             <noscript class="error-message">
                 This webpage requires JavaScript; please enable and refresh.
             </noscript>
-            <div class="nostyle" aria-hidden="true">
+            <div id="nostyle" aria-hidden="true">
                 Styles did not load; please check console or try refreshing.
             </div>
             <div id="loading-error" class="error-message" style="display:none">
@@ -57,10 +57,10 @@
             <div id="loading-spinner" class="spinner"></div>
 
             <!-- Events lists -->
-            <div id="events"></div>
-            <div id="footer" class="footer">
+            <section id="events"></section>
+            <footer id="footer">
                 All of these functions are open to everyone!
-            </div>
+            </footer>
 
         </div>
     </body>
