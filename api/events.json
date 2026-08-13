@@ -8,7 +8,7 @@
         "title": "Business Meeting",
         "location": "Online (Zoom)",
         "schedule": "First day of every month.",
-        "details": "Link provided that day on Facebook and Discord."
+        "details": "Link provided the day of on Facebook and Discord."
     }, {
         "day": 8,
         "timeStart": "6:00 PM",
@@ -16,7 +16,7 @@
         "title": "Live Music Practice",
         "location": "",
         "schedule": "Second Tuesday of every month.",
-        "details": ""
+        "details": "Listeners welcome! Players must bring own instrument. Please check Discord for setlist."
     }, {
         "day": 19,
         "timeStart": "",
@@ -24,7 +24,7 @@
         "title": "Live Weapons Practice",
         "location": "",
         "schedule": "Every third Saturday, weather permitting.",
-        "details": "Before attending, confirm with Jessi Moss (THL Katarzyna) on Facebook or Discord."
+        "details": "Before attending, confirm with Jessi Moss (THL Katarzyna) on Facebook or Discord. Loaner gear is available."
     }, {
         "day": 29,
         "timeStart": "",
@@ -32,6 +32,6 @@
         "title": "Potluck & Project Night",
         "location": "661 Ford Rd, Jefferson, GA 30549",
         "schedule": "",
-        "details": "Bring a small dish to share. Cake is provided."
+        "details": "Project not required. Bring a small dish to share. Cake is provided!"
     }]
 }
