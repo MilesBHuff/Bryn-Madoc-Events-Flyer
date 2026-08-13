@@ -8,7 +8,7 @@
 ## Customization
 (This assumes you already followed the steps in "Usage".)
 1. Edit `api/events.json`. Please leave fields blank if you do not know what to put in them.
-2. Refresh the webpage. (F5)
+2. Hard-refresh the webpage, wiping cache. (Ctrl+Shift+R)
 
 ## Export
 (This will place a .PNG screenshot of the page into your Downloads folder.)
