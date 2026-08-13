@@ -1,9 +1,12 @@
 :root {
-    --purple: #35136d;
-    --gold: #c99716;
+    /* Useful tool for mixing colors: https://colorizer.org */
+    --purple: #522672; /* Hue: 275°, HSL saturation: 50%, HSV saturation 67%, Lab lightness: 25% */
+    --gold-light: #e2c637; /* Hue: 50°, HSL/HSV saturation: 75%, Lab lightness: 80% */
+    --gold-dark: #baa200; /* `--gold-light`, but with Lab lightness == 67%  */
     --red: #f00;
     --gray: #777;
     --white: #fff;
+    --rule-thickness: 0.125rem;
 }
 body {
     background-color: var(--gray);
@@ -103,7 +106,7 @@ h1, h2 {
 #footer::after {
     content: "";
     flex: 1;
-    border-top: 0.125rem solid var(--gold);
+    border-top: var(--rule-thickness) solid var(--gold-dark);
 }
 #footer {
     color: var(--purple);
@@ -145,7 +148,7 @@ h1, h2 {
 .events-table-more-details::before {
     content: "";
     position: absolute;
-    border-left: 0.125rem solid var(--gold);
+    border-left: var(--rule-thickness) solid var(--gold-dark);
     top: 10%;
     bottom: 10%;
 }
@@ -156,10 +159,10 @@ h1, h2 {
     font-size: 2.5rem;
 }
 .events-table-time-start {
-    border-bottom: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold-dark);
 }
 .events-table-time-end {
-    border-top: 1px solid var(--gold);
+    border-top: 1px solid var(--gold-dark);
     margin-top: -1px;
 }
 .events-table-time-start,
