@@ -30,7 +30,8 @@
     }
 }
 .loading-error {
-    font-size: 2.5rem;
+    font-family: "Hack", monospace;
+    font-size: 1.25rem;
     color: red;
 }
 
