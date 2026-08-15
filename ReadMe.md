@@ -2,9 +2,9 @@
 This is a small webapp that renders textual data as a pretty events schedule.
 
 ## Viewing
-You need to run a webserver or disable CORS to run this application locally. Here is the simplest possible way to accomplish that:
+You need to run a webserver or disable CORS to run this application locally. Here is the simplest possible way to accomplish that on Windows:
 1. Get Python from the Windows Store: https://apps.microsoft.com/detail/9PNRBTZXMB4Z
-2. Run this from a Command Prompt in the project directory: `python3 -m http.server 8000`.
+2. Execute `start.bat`.
 3. Open [`http://localhost:8000`](http://localhost:8000) from a web browser.
 
 ## Customization
