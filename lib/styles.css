@@ -9,6 +9,7 @@
 
     --rule-width: 0.125rem;
     --border-width: 1px;
+    --gap-width: 1rem;
 }
 body {
     background-color: var(--gray);
@@ -63,7 +64,7 @@ h1, h2 {
 #header {
     width: 100%;
     display: flex;
-    gap: 1rem;
+    gap: var(--gap-width);
     align-items: start;
 }
 .header-image {
@@ -99,32 +100,60 @@ h1, h2 {
     line-height: 2rem;
 }
 .header-text-decorated,
-#footer {
+.footer-text-right {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--gap-width);
 }
 .header-text-decorated::before,
 .header-text-decorated::after,
-#footer::before,
-#footer::after {
+.footer-text-right::before {
     content: "";
     flex: 1;
     border-top: var(--rule-width) solid var(--gold-dark);
 }
 #footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1ch;
+}
+.footer-text {
+    align-self: flex-end;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-text-left {
+    align-self: flex-start;
+    text-align: left;
     color: var(--purple);
     font-variant-caps: small-caps;
     font-weight: bold;
     text-align: center;
     font-size: 1.5rem;
-    margin-top: 0.5rem;
+}
+.footer-text-right {
+    align-self: flex-end;
+    text-align: right;
+}
+/* QR code is 29px with 3px margins. */
+.footer-image-wrapper {
+    width: 64px;
+    height: 58px;
+    overflow: hidden;
+}
+.footer-image-wrapper >img {
+    width: 70px;
+    height: 70px;
+    transform: translate(-6px, -6px);
 }
 /* Match fonts to website. */
 .header-text-pre,
 .header-text-main,
-#footer {
+.footer-text-left {
     font-family: Almendra, serif;
     font-weight: normal;
     font-variant-caps: normal;
