@@ -1,5 +1,5 @@
 # ReadMe
-This is a small webapp that renders textual data as a pretty events schedule.
+This is a small webapp that renders textual data as a pretty schedule.
 
 ## Viewing
 You need to run a webserver or disable CORS to run this application locally. Here is the simplest possible way to accomplish that on Windows:
