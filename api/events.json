@@ -4,10 +4,10 @@
     "events": [{
         "day": 1,
         "timeStart": "7:00 PM",
-        "timeEnd": "",
+        "timeEnd": "8:30 PM",
         "title": "Business Meeting",
         "location": "Online (Zoom)",
-        "schedule": "First day of every month.",
+        "schedule": "Monthly on 1st Tuesday.",
         "details": "Link is posted the day of on socials."
     }, {
         "day": 8,
@@ -15,23 +15,31 @@
         "timeEnd": "8:00 PM",
         "title": "Live Music Practice",
         "location": "",
-        "schedule": "Second Tuesday of every month.",
+        "schedule": "Monthly on 2nd Tuesday.",
         "details": "Listeners welcome! Players must bring own instrument. Setlist is on Discord."
+    }, {
+        "day": 17,
+        "timeStart": "7:00 PM",
+        "timeEnd": "9:00 PM",
+        "title": "Virtual Project Night",
+        "location": "Online (Zoom)",
+        "schedule": "Monthly on 3rd Thursday.",
+        "details": "Link is posted the day of on socials."
     }, {
         "day": 19,
         "timeStart": "",
         "timeEnd": "",
         "title": "Live Weapons Practice",
         "location": "",
-        "schedule": "Every third Saturday, weather permitting.",
-        "details": "Confirm attendance with Jessi Moss (THL Katarzyna). Loaner gear is available."
+        "schedule": "Monthly on 3rd Saturday.",
+        "details": "Confirm attendance with Jessi Moss (THL Katarzyna). Loaner gear is available. Depends on weather."
     }, {
         "day": 29,
-        "timeStart": "",
-        "timeEnd": "",
+        "timeStart": "7:00 PM",
+        "timeEnd": "9:00 PM",
         "title": "Potluck & Project Night",
         "location": "661 Ford Rd, Jefferson, GA 30549",
-        "schedule": "",
+        "schedule": "Monthly on 4th Tuesday.",
         "details": "Project not required. Bring a small dish to share."
     }]
 }
