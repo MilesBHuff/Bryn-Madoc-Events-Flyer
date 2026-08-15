@@ -4,7 +4,7 @@
     --gold-light: #e2c637; /* Hue: 50°, HSL/HSV saturation: 75%, Lab lightness: 80% */
     --gold-dark: #baa200; /* `--gold-light`, but with Lab lightness == 67%  */
     --red: #f00;
-    --gray: #777;
+    --gray: #595959; /* Lightest gray that passes WCAG AAA on normal text. */
     --white: #fff;
     --rule-thickness: 0.125rem;
 }
