@@ -6,7 +6,7 @@ You need to run a webserver or disable CORS to run this application locally. Her
 1. Get Python from the Windows Store: https://apps.microsoft.com/detail/9PNRBTZXMB4Z
 2. Execute `start.bat`.
 3. Open [`http://localhost:8000`](http://localhost:8000) from a web browser.
-4. Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
+4. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
 
 ## Customization
 (This assumes you already followed the steps in "Usage".)
@@ -14,12 +14,16 @@ You need to run a webserver or disable CORS to run this application locally. Her
 2. Hard-refresh the webpage, wiping cache. (Ctrl+Shift+R)
 
 ## Export
-(This will place a .PNG screenshot of the page into your Downloads folder.)
 1. While viewing the page, press Ctrl+Shift+C and wait for a sidebar to load.
 2. Press Ctrl+Shift+C again.
-3. In the sidebar, hover your cursor over the top pane, which contains HTML code.
+
+### Image
+(This will place a .PNG screenshot of the page into your Downloads folder.)
+3. In the developer sidebar, hover your cursor over the top pane, which contains HTML code.
 4. Scroll to the top in that pane.
 5. Right-click `<div id="root">`.
 6. Click "Screenshot Node".
-7. Click the "Console" tab.
-8. Select and copy the plaintext version of the schedule.
+
+### Text
+3. Click the "Console" tab.
+4. Select and copy the plaintext version of the schedule.
