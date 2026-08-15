@@ -19,7 +19,7 @@ body {
 #root {
     background-color: var(--white);
     min-width: 628px;
-    max-width: 1024px;
+    width: 814px;
     padding: 1rem;
     font-family: "Alice", serif;
     font-size: 1rem;
@@ -65,7 +65,7 @@ h1, h2 {
     align-items: start;
 }
 .header-image {
-    height: 13.5rem;
+    height: 13.3333rem;
 }
 .header-text {
     width: 100%;
@@ -84,7 +84,7 @@ h1, h2 {
     line-height: 80%;
 }
 .header-text-main {
-    font-size: 7.5rem;
+    font-size: 7rem;
     line-height: 80%;
 }
 .header-text-post {
@@ -145,6 +145,9 @@ h1, h2 {
     border-right: 1rem solid var(--purple);
     border-bottom: 1px solid var(--purple);
     position: relative;
+}
+.events-table-more-details {
+    padding-left: unset !important;
 }
 .events-table-more-details::before {
     content: "";
