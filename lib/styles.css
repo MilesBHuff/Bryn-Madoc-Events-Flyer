@@ -6,7 +6,9 @@
     --red: #f00;
     --gray: #595959; /* Lightest gray that passes WCAG AAA on normal text. */
     --white: #fff;
-    --border-width: 0.125rem;
+
+    --rule-width: 0.125rem;
+    --border-width: 1px;
 }
 body {
     background-color: var(--gray);
@@ -65,7 +67,7 @@ h1, h2 {
     align-items: start;
 }
 .header-image {
-    height: 10.5rem;
+    height: 12rem;
 }
 .header-text {
     width: 100%;
@@ -81,20 +83,20 @@ h1, h2 {
 }
 .header-text-pre {
     font-size: 2rem;
-    line-height: 2.3333rem;
+    line-height: 2.5rem;
 }
 .header-text-main {
     font-size: 4rem;
-    line-height: 3rem;
+    line-height: 3.5rem;
     font-weight: bold;
 }
 .header-text-divider {
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 .header-text-post {
     font-size: 2.5rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 .header-text-decorated,
 #footer {
@@ -109,7 +111,7 @@ h1, h2 {
 #footer::after {
     content: "";
     flex: 1;
-    border-top: var(--border-width) solid var(--gold-dark);
+    border-top: var(--rule-width) solid var(--gold-dark);
 }
 #footer {
     color: var(--purple);
@@ -118,6 +120,15 @@ h1, h2 {
     text-align: center;
     font-size: 1.5rem;
     margin-top: 0.5rem;
+}
+/* Match fonts to website. */
+.header-text-pre,
+.header-text-main,
+#footer {
+    font-family: Almendra, serif;
+    font-weight: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: none;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -155,7 +166,7 @@ h1, h2 {
 .events-table-more-details::before {
     content: "";
     position: absolute;
-    border-left: var(--border-width) solid var(--gold-dark);
+    border-left: var(--rule-width) solid var(--gold-dark);
     top: 10%;
     bottom: 10%;
 }
@@ -163,7 +174,7 @@ h1, h2 {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .events-table-day {
     font-size: 2rem;
-    font-family: "Times New Roman", serif;
+    font-family: "Times New Roman", serif; /* TNR gives full-height numerals. */
     font-weight: bold;
 }
 .events-table-time-start {
