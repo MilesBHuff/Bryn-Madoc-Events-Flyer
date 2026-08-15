@@ -1,5 +1,6 @@
 :root {
     /* Useful tool for mixing colors: https://colorizer.org */
+    /* IMPORTANT: Please replace-all when changing colors, lest things go out-of-sync. */
     --purple: #522672; /* Hue: 275°, HSL saturation: 50%, HSV saturation 67%, Lab lightness: 25% */
     --gold-light: #e2c637; /* Hue: 50°, HSL/HSV saturation: 75%, Lab lightness: 80% */
     --gold-dark: #baa200; /* `--gold-light`, but with Lab lightness == 67%  */
