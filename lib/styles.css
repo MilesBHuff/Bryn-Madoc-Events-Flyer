@@ -1,3 +1,7 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*   G L O B A L   &   R O O T                                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 :root {
     /* Useful tool for mixing colors: https://colorizer.org */
     /* IMPORTANT: Please replace-all when changing colors, lest things go out-of-sync. */
@@ -39,6 +43,9 @@ h1, h2 {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*   C O N T I N G E N C Y                                                   */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 #nostyle {
     display: none;
 }
@@ -62,6 +69,9 @@ h1, h2 {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*   H E A D E R                                                             */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 #header {
     width: 100%;
     display: flex;
@@ -117,6 +127,9 @@ h1, h2 {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*   F O O T E R                                                             */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 #footer {
     width: 100%;
     display: flex;
@@ -162,6 +175,9 @@ h1, h2 {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*   E V E N T S   T A B L E                                                 */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .events-table {
     border-collapse: separate;
     border-spacing: 0 0.5rem;
@@ -202,6 +218,9 @@ h1, h2 {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*   E V E N T S   T A B L E   C O N T E N T S                               */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .events-table-day {
     font-size: 2rem;
     font-family: "Times New Roman", serif; /* TNR gives full-height numerals. */
