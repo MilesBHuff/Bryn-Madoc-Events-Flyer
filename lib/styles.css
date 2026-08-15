@@ -41,6 +41,9 @@ h1, h2 {
     font-size: unset;
     font-weight: unset;
 }
+a {
+    color: unset;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /*   C O N T I N G E N C Y                                                   */
