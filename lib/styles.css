@@ -6,7 +6,7 @@
     --red: #f00;
     --gray: #595959; /* Lightest gray that passes WCAG AAA on normal text. */
     --white: #fff;
-    --rule-thickness: 0.125rem;
+    --border-width: 0.125rem;
 }
 body {
     background-color: var(--gray);
@@ -19,7 +19,7 @@ body {
 #root {
     background-color: var(--white);
     min-width: 628px;
-    width: 814px;
+    width: 48rem;
     padding: 1rem;
     font-family: "Alice", serif;
     font-size: 1rem;
@@ -65,7 +65,7 @@ h1, h2 {
     align-items: start;
 }
 .header-image {
-    height: 13.3333rem;
+    height: 10.5rem;
 }
 .header-text {
     width: 100%;
@@ -80,19 +80,21 @@ h1, h2 {
     line-height: 100%;
 }
 .header-text-pre {
-    font-size: 2.5rem;
-    line-height: 80%;
+    font-size: 2rem;
+    line-height: 2.3333rem;
 }
 .header-text-main {
-    font-size: 7rem;
-    line-height: 80%;
-}
-.header-text-post {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    line-height: 3rem;
+    font-weight: bold;
 }
 .header-text-divider {
     font-size: 2rem;
-    line-height: 125%;
+    line-height: 2.5rem;
+}
+.header-text-post {
+    font-size: 2.5rem;
+    line-height: 1.5rem;
 }
 .header-text-decorated,
 #footer {
@@ -107,7 +109,7 @@ h1, h2 {
 #footer::after {
     content: "";
     flex: 1;
-    border-top: var(--rule-thickness) solid var(--gold-dark);
+    border-top: var(--border-width) solid var(--gold-dark);
 }
 #footer {
     color: var(--purple);
@@ -130,21 +132,22 @@ h1, h2 {
     background-color: var(--purple);
     color: var(--white);
     border-radius: 1rem 0 0 1rem;
-    border: 1px solid var(--purple);
+    border: var(--border-width) solid var(--purple);
     border-right: 0;
     text-align: center;
 }
 .events-table-main {
-    border: 1px solid var(--purple);
+    border: var(--border-width) solid var(--purple);
     border-left: 0;
     border-right: 0;
 }
 .events-table-more {
     border-radius: 0 1rem 1rem 0;
-    border-top: 1px solid var(--purple);
-    border-right: 1rem solid var(--purple);
-    border-bottom: 1px solid var(--purple);
+    border-top: var(--border-width) solid var(--purple);
+    border-right: 0.5rem solid var(--purple);
+    border-bottom: var(--border-width) solid var(--purple);
     position: relative;
+    padding-right: 0.5rem;
 }
 .events-table-more-details {
     padding-left: unset !important;
@@ -152,15 +155,16 @@ h1, h2 {
 .events-table-more-details::before {
     content: "";
     position: absolute;
-    border-left: var(--rule-thickness) solid var(--gold-dark);
+    border-left: var(--border-width) solid var(--gold-dark);
     top: 10%;
     bottom: 10%;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .events-table-day {
-    font-variant-caps: small-caps;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
 }
 .events-table-time-start {
     border-bottom: 1px solid var(--gold-dark);
@@ -178,7 +182,7 @@ h1, h2 {
 .events-table-title {
     font-variant-caps: small-caps;
     color: var(--purple);
-    font-size: 2rem;
+    font-size: 1.75rem;
     width: max-content;
 }
 .events-table-location {
@@ -194,6 +198,6 @@ h1, h2 {
     line-height: 150%;
 }
 .events-table-details {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     padding-left: 1rem;
 }
