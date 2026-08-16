@@ -167,7 +167,7 @@ a {
 }
 /* QR code is 29px with 3px margins. */
 .footer-image-wrapper {
-    width: 64px;
+    width: 58px;
     height: 58px;
     overflow: hidden;
 }
