@@ -2,10 +2,26 @@
 This is a small webapp that renders textual data as a pretty schedule.
 
 ## Viewing
-You need to run a webserver or disable CORS to run this application locally. Here is the simplest possible way to accomplish that on Windows:
+You need to run a webserver or disable CORS to run this application locally. Here are the simplest possible ways to accomplish that:
+
+### Windows
 
 1. Get Python from the Windows Store: https://apps.microsoft.com/detail/9PNRBTZXMB4Z
 2. Execute `start.bat`.
+
+### OS X
+(untested)
+
+1. Execute `start.bash`.
+2. Allow OS X to install missing dependencies.
+
+### Linux
+
+1. You probably already have `python3`; if not, get it via your package manager.
+2. Execute `start.bash`.
+
+### All
+
 3. Open [`http://localhost:8000`](http://localhost:8000) from a web browser.
 4. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
 
