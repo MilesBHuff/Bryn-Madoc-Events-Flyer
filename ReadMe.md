@@ -6,14 +6,13 @@ You need to run a webserver or disable CORS to run this application locally. Her
 
 ### Windows
 
-1. Get Python from the Windows Store: https://apps.microsoft.com/detail/9PNRBTZXMB4Z
+1. Install Python from the Windows Store: https://apps.microsoft.com/detail/9PNRBTZXMB4Z
 2. Execute `start.bat`.
 
 ### OS X
-(untested)
 
-1. Execute `start.bash`.
-2. Allow OS X to install missing dependencies.
+1. Install Python from here: https://www.python.org/downloads/macos
+2. Execute `start.bash`.
 
 ### Linux
 
