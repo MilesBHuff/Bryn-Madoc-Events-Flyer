@@ -21,15 +21,14 @@ You need to run a webserver or disable CORS to run this application locally. Her
 1. While viewing the page, press Ctrl+Shift+C and wait for a sidebar to load.
 2. Press Ctrl+Shift+C again.
 
-### Image
-(This will place a .PNG screenshot of the page into your Downloads folder.)
+* **Image**
 
-3. In the developer sidebar, hover your cursor over the top pane, which contains HTML code.
-4. Scroll to the top in that pane.
-5. Right-click `<div id="root">`.
-6. Click "Screenshot Node".
+  1. In the developer sidebar, hover your cursor over the top pane, which contains HTML code.
+  2. Scroll to the top in that pane.
+  3. Right-click `<div id="root">`.
+  4. Click "Screenshot Node". (This will place a .PNG screenshot of the page into your Downloads folder.)
 
-### Text
+* **Text**
 
-3. Click the "Console" tab.
-4. Select and copy the plaintext version of the schedule.
+  1. Click the "Console" tab.
+  2. Select and copy the plaintext version of the schedule.
