@@ -31,6 +31,10 @@ This is a small webapp that renders textual data as a pretty schedule. This sche
   1. Click the "Console" tab.
   2. Select and copy the plaintext version of the schedule.
 
+* **Print**
+
+  1. Press Ctrl+P and follow the prompts.
+
 ## Architecture notes
 
 * Data is in a `.js` file sourced from the HTML. This is ugly and not normally the correct way to architecture an app, but it allows users to run this without a webserver, which was a business requirement. Click [here](https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/tree/7223f88c3d15ae223ef98ee636f387ba01a8309c) to view the application as it was before this change.
