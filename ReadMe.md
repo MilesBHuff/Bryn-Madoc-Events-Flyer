@@ -4,16 +4,14 @@ This is a small webapp that renders textual data as a pretty schedule. This sche
 ## Viewing
 You need to run a webserver or disable CORS to run this application locally. Here are the simplest possible ways to accomplish that:
 
-1. Install Python. On Windows, go here: https://apps.microsoft.com/detail/9PNRBTZXMB4Z. On OS X, go here: https://www.python.org/downloads/macos. On Linux, it should be pre-installed. If you are on any other OS, you don't need instructions; you know what you're doing.
-2. Download this project: https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/archive/refs/heads/main.zip
-3. Execute `start.bat` if on Windows, or `start.bash` if you are on any other OS.
-4. Open [`http://localhost:8000`](http://localhost:8000) from a web browser.
-5. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
+1. Download this project: https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/archive/refs/heads/main.zip
+2. Open `index.html` in your favorite web browser.
+3. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
 
 ## Customization
 (This assumes you already followed the steps in "Viewing".)
 
-1. Edit `api/events.json`. Please leave fields blank if you do not know what to put in them.
+1. Edit `api/events.js`. Please leave fields blank if you do not know what to put in them.
 2. Hard-refresh the webpage, wiping cache. (Ctrl+Shift+R)
 
 ## Export
@@ -32,3 +30,7 @@ You need to run a webserver or disable CORS to run this application locally. Her
 
   1. Click the "Console" tab.
   2. Select and copy the plaintext version of the schedule.
+
+## Architecture notes
+
+* Data is in a `.js` file sourced from the HTML. This is ugly and not normally the correct way to architecture an app, but it allows users to run this without a webserver, which was a business requirement.

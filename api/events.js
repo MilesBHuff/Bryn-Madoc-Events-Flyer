@@ -1,4 +1,4 @@
-{
+globalThis.data = {
     "year": 2026,
     "month": 9,
     "events": [{
@@ -42,4 +42,5 @@
         "schedule": "Monthly on 4th Tuesday.",
         "details": "Project not required. Bring a small dish to share."
     }]
-}
+};
+globalThis.main();
