@@ -162,7 +162,6 @@ a {
 .footer-text-right-bottom {
     color: var(--gray);
     font-size: 0.75rem;
-    font-style: italic;
     text-decoration: underline;
 }
 /* QR code is 29px with 3px margins. */
