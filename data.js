@@ -8,7 +8,7 @@ globalThis.displayData({
         title: "Business Meeting",
         location: "Online (Zoom)",
         schedule: "Monthly on 1st Tuesday.",
-        details: "Link is posted the day of on socials."
+        details: "Link is posted the day of on socials.",
     }, {
         day: 8,
         timeStart: "6:00 PM",
@@ -16,7 +16,7 @@ globalThis.displayData({
         title: "Live Music Practice",
         location: "",
         schedule: "Monthly on 2nd Tuesday.",
-        details: "Listeners welcome! Players must bring own instrument. Setlist is on Discord."
+        details: "Listeners welcome! Players must bring own instrument. Setlist is on Discord.",
     }, {
         day: 17,
         timeStart: "7:00 PM",
@@ -24,7 +24,7 @@ globalThis.displayData({
         title: "Virtual Project Night",
         location: "Online (Zoom)",
         schedule: "Monthly on 3rd Thursday.",
-        details: "Link is posted the day of on socials."
+        details: "Link is posted the day of on socials.",
     }, {
         day: 19,
         timeStart: "",
@@ -32,7 +32,7 @@ globalThis.displayData({
         title: "Live Weapons Practice",
         location: "",
         schedule: "Monthly on 3rd Saturday.",
-        details: "Depends on weather. Confirm attendance with Jessi Moss (THL Katarzyna). Loaner gear available."
+        details: "Depends on weather. Confirm attendance with Jessi Moss (THL Katarzyna). Loaner gear available.",
     }, {
         day: 29,
         timeStart: "7:00 PM",
@@ -40,6 +40,6 @@ globalThis.displayData({
         title: "Potluck & Project Night",
         location: "661 Ford Rd, Jefferson, GA 30549",
         schedule: "Monthly on 4th Tuesday.",
-        details: "Project not required. Bring a small dish to share."
-    }]
+        details: "Project not required. Bring a small dish to share.",
+    }],
 });
