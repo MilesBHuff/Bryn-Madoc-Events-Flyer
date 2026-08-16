@@ -5,8 +5,9 @@ This is a small webapp that renders textual data as a pretty schedule. This sche
 You need to run a webserver or disable CORS to run this application locally. Here are the simplest possible ways to accomplish that:
 
 1. Download this project: https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/archive/refs/heads/main.zip
-2. Open `index.html` in your favorite web browser.
-3. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
+2. Extract the files from the archive.
+3. Open `index.html` in your favorite web browser.
+4. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
 
 ## Customization
 (This assumes you already followed the steps in "Viewing".)
