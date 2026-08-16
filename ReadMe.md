@@ -40,4 +40,7 @@ This is a small webapp that renders textual data as a pretty schedule. This sche
 * Data is in a `.js` file sourced from the HTML. This is ugly and not normally the correct way to architecture an app, but it allows users to run this without a webserver, which was a business requirement. Click [here](https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/tree/7223f88c3d15ae223ef98ee636f387ba01a8309c) to view the application as it was before this change.
 
 ## Copyright
+
 Copyright © 2026 Miles Bradley Huff. Publicly licensed for use under the terms of the GNU Affero General Public License v3.0, which can be found in `License.txt`.
+
+`res/coa.svg` is not subject to the above copyright declaration. It is owned by the Barony of Bryn Madoc and used/color-modified with explicit permission for this specific project.
