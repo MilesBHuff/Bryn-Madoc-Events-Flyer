@@ -1,46 +1,46 @@
 globalThis.data = {
-    "year": 2026,
-    "month": 9,
-    "events": [{
-        "day": 1,
-        "timeStart": "7:00 PM",
-        "timeEnd": "8:30 PM",
-        "title": "Business Meeting",
-        "location": "Online (Zoom)",
-        "schedule": "Monthly on 1st Tuesday.",
-        "details": "Link is posted the day of on socials."
+    year: 2026,
+    month: 9,
+    events: [{
+        day: 1,
+        timeStart: "7:00 PM",
+        timeEnd: "8:30 PM",
+        title: "Business Meeting",
+        location: "Online (Zoom)",
+        schedule: "Monthly on 1st Tuesday.",
+        details: "Link is posted the day of on socials."
     }, {
-        "day": 8,
-        "timeStart": "6:00 PM",
-        "timeEnd": "8:00 PM",
-        "title": "Live Music Practice",
-        "location": "",
-        "schedule": "Monthly on 2nd Tuesday.",
-        "details": "Listeners welcome! Players must bring own instrument. Setlist is on Discord."
+        day: 8,
+        timeStart: "6:00 PM",
+        timeEnd: "8:00 PM",
+        title: "Live Music Practice",
+        location: "",
+        schedule: "Monthly on 2nd Tuesday.",
+        details: "Listeners welcome! Players must bring own instrument. Setlist is on Discord."
     }, {
-        "day": 17,
-        "timeStart": "7:00 PM",
-        "timeEnd": "9:00 PM",
-        "title": "Virtual Project Night",
-        "location": "Online (Zoom)",
-        "schedule": "Monthly on 3rd Thursday.",
-        "details": "Link is posted the day of on socials."
+        day: 17,
+        timeStart: "7:00 PM",
+        timeEnd: "9:00 PM",
+        title: "Virtual Project Night",
+        location: "Online (Zoom)",
+        schedule: "Monthly on 3rd Thursday.",
+        details: "Link is posted the day of on socials."
     }, {
-        "day": 19,
-        "timeStart": "",
-        "timeEnd": "",
-        "title": "Live Weapons Practice",
-        "location": "",
-        "schedule": "Monthly on 3rd Saturday.",
-        "details": "Depends on weather. Confirm attendance with Jessi Moss (THL Katarzyna). Loaner gear available."
+        day: 19,
+        timeStart: "",
+        timeEnd: "",
+        title: "Live Weapons Practice",
+        location: "",
+        schedule: "Monthly on 3rd Saturday.",
+        details: "Depends on weather. Confirm attendance with Jessi Moss (THL Katarzyna). Loaner gear available."
     }, {
-        "day": 29,
-        "timeStart": "7:00 PM",
-        "timeEnd": "9:00 PM",
-        "title": "Potluck & Project Night",
-        "location": "661 Ford Rd, Jefferson, GA 30549",
-        "schedule": "Monthly on 4th Tuesday.",
-        "details": "Project not required. Bring a small dish to share."
+        day: 29,
+        timeStart: "7:00 PM",
+        timeEnd: "9:00 PM",
+        title: "Potluck & Project Night",
+        location: "661 Ford Rd, Jefferson, GA 30549",
+        schedule: "Monthly on 4th Tuesday.",
+        details: "Project not required. Bring a small dish to share."
     }]
 };
 globalThis.main();
