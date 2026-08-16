@@ -34,4 +34,4 @@ You need to run a webserver or disable CORS to run this application locally. Her
 
 ## Architecture notes
 
-* Data is in a `.js` file sourced from the HTML. This is ugly and not normally the correct way to architecture an app, but it allows users to run this without a webserver, which was a business requirement. Click [here](https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/commit/7223f88c3d15ae223ef98ee636f387ba01a8309c) to view the application as it was before this change.
+* Data is in a `.js` file sourced from the HTML. This is ugly and not normally the correct way to architecture an app, but it allows users to run this without a webserver, which was a business requirement. Click [here](https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/tree/7223f88c3d15ae223ef98ee636f387ba01a8309c) to view the application as it was before this change.
