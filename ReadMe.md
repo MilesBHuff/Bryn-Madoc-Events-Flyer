@@ -2,7 +2,6 @@
 This is a small webapp that renders textual data as a pretty schedule. This schedule can be exported as an image and as text; it can also be printed.
 
 ## Viewing
-You need to run a webserver or disable CORS to run this application locally. Here are the simplest possible ways to accomplish that:
 
 1. Download this project: https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/archive/refs/heads/main.zip
 2. Extract the files from the archive.
