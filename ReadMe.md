@@ -14,6 +14,8 @@ This is a small webapp that renders textual data as a pretty schedule. This sche
 1. Edit `data.js`. Please leave fields blank if you do not know what to put in them.
 2. Hard-refresh the webpage, wiping cache. (Ctrl+Shift+R)
 
+I recommend using a text-editor with built-in linting, like [VSCodium](https://vscodium.com). Such editors will warn you about errors/mistakes that can cause the app to break.
+
 ## Export
 
 1. While viewing the page, press Ctrl+Shift+C and wait for a sidebar to load.
