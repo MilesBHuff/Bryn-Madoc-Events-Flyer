@@ -12,7 +12,7 @@ You need to run a webserver or disable CORS to run this application locally. Her
 ## Customization
 (This assumes you already followed the steps in "Viewing".)
 
-1. Edit `api/events.js`. Please leave fields blank if you do not know what to put in them.
+1. Edit `data.js`. Please leave fields blank if you do not know what to put in them.
 2. Hard-refresh the webpage, wiping cache. (Ctrl+Shift+R)
 
 ## Export
