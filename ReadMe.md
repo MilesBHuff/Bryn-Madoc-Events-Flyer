@@ -4,25 +4,11 @@ This is a small webapp that renders textual data as a pretty schedule.
 ## Viewing
 You need to run a webserver or disable CORS to run this application locally. Here are the simplest possible ways to accomplish that:
 
-### Windows
-
-1. Install Python from the Windows Store: https://apps.microsoft.com/detail/9PNRBTZXMB4Z
-2. Execute `start.bat`.
-
-### OS X
-
-1. Install Python from here: https://www.python.org/downloads/macos
-2. Execute `start.bash`.
-
-### Linux
-
-1. You probably already have `python3`; if not, get it via your package manager.
-2. Execute `start.bash`.
-
-### All
-
-3. Open [`http://localhost:8000`](http://localhost:8000) from a web browser.
-4. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
+1. Install Python. On Windows, go here: https://apps.microsoft.com/detail/9PNRBTZXMB4Z. On OS X, go here: https://www.python.org/downloads/macos. On Linux, it should be pre-installed. If you are on any other OS, you don't need instructions; you know what you're doing.
+2. Download this project: https://github.com/MilesBHuff/Bryn-Madoc-Events-Flyer/archive/refs/heads/main.zip
+3. Execute `start.bat` if on Windows, or `start.bash` if you are on any other OS.
+4. Open [`http://localhost:8000`](http://localhost:8000) from a web browser.
+5. (Optional) Press `F12` and click the "Console" tab to view the plaintext version of the schedule.
 
 ## Customization
 (This assumes you already followed the steps in "Usage".)
